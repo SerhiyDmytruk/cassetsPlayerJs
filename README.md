@@ -1,2 +1,0 @@
-# cassetsPlayerJs
-Created with CodeSandbox

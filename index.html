@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <div class="white-circle">
+      <div id="player" class="player">
+        <audio
+          class="hidden"
+          id="player-audio"
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/heartbeat.mp3"
+        ></audio>
+        <ul class="player__actions">
+          <li><button type="button" class="player__btn">reject</button></li>
+          <li>
+            <button type="button" class="player__btn player__btn--play-stop">
+              play/stop
+            </button>
+          </li>
+          <li>
+            <button type="button" class="player__btn player__btn--prev">
+              << prev
+            </button>
+          </li>
+          <li>
+            <button type="button" class="player__btn player__btn--next">
+              next >>
+            </button>
+          </li>
+        </ul>
+        <div class="player__box">
+          <div class="player__cassette-top">
+            <p class="player__artist">
+              test name - song name
+            </p>
+          </div>
+          <div class="player__cassette">
+            <div class="player__circle player__circle--prev"></div>
+            <div class="player__circle player__circle--next"></div>
+          </div>
+        </div>
+        <div class="player__dynamic"></div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
